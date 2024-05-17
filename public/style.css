@@ -1,0 +1,101 @@
+* {
+  box-sizing: content-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'marvelregular';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e0e0e0;
+}
+
+.left {
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 30px;
+}
+
+.left,
+.right {
+  overflow: scroll;
+}
+
+.right .big,
+.left li.select {
+  color: #4a4a4a;
+  font-size: xx-large;
+}
+
+.left li {
+  cursor: pointer;
+  list-style-type: none;
+}
+
+h3 {
+  top: -3px;
+  margin: 0;
+  padding: 10px;
+  font-family: 'marvelbold';
+  text-align: center;
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 30px;
+}
+
+.container {
+  width: 50vw;
+  height: 70vh;
+  background-color: #fafafa;
+  border: 3px solid black;
+  border-radius: 30px;
+}
+
+.head,
+.foo {
+  height: 15%;
+}
+
+.foo {
+  display: flex;
+  align-items: center;
+  background-color: #d9d9d9;
+  border: 3px solid black;
+  border-radius: 30px;
+}
+
+.foo input {
+  width: 50%;
+  display: flex;
+  padding: 5px;
+  margin: 5%;
+  height: 25px;
+  border: 3px solid #303030;
+  border-radius: 30px;
+  background-color: #f0f0f0;
+}
+
+input[type='text']:focus {
+  outline: none;
+  border: 3px solid white;
+  border-radius: 30px;
+  background-color: #bdbdbd;
+}
+
+.body {
+  height: 70%;
+  display: flex;
+}
+
+.left {
+  width: 20%;
+}
+.right {
+  width: 75%;
+  padding: 1%;
+  display: flex;
+  flex-direction: column-reverse;
+}
